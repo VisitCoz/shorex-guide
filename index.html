@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit Cozumel — Shore Excursions Guide</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hub-hero">
+    <div class="kick">For our cruise partners</div>
+    <h1 class="display">Visit Cozumel — Shore Excursions</h1>
+    <p>Tap a tour to see what it is, why guests love it, and how to describe it.</p>
+  </div>
+
+  <div class="grid">
+
+    <a class="poster" href="honey-traditions.html">
+      <div class="poster-img h-honey">
+        <img src="images/honey-traditions/hero/cover.jpg" alt="" onerror="this.remove()">
+        <span class="pl">Honey Traditions</span>
+      </div>
+      <div class="poster-meta">
+        <h3 class="display">Honey Traditions of Cozumel with Hands-On Chocolate &amp; Salsa</h3>
+        <span class="badge cat">Food &amp; Culture</span>
+        <div class="dur">~4 hrs · 8–48 pax · Ages 3+</div>
+        <span class="synopsis">View guide →</span>
+      </div>
+    </a>
+
+    <a class="poster" href="native-kitchen.html">
+      <div class="poster-img h-native">
+        <img src="images/native-kitchen/hero/cover.jpg" alt="" onerror="this.remove()">
+        <span class="pl">The Native Kitchen</span>
+      </div>
+      <div class="poster-meta">
+        <h3 class="display">The Native Kitchen: Local Market and Cooking Journey</h3>
+        <span class="badge cat">Market &amp; Cooking</span>
+        <div class="dur">~4.5 hrs · 8–48 pax · Ages 3+</div>
+        <span class="synopsis">View guide →</span>
+      </div>
+    </a>
+
+    <a class="poster" href="city-tour-sky-show.html">
+      <div class="poster-img h-city">
+        <img src="images/city-tour-sky-show/hero/cover.jpg" alt="" onerror="this.remove()">
+        <span class="pl">City Tour + Sky Show</span>
+      </div>
+      <div class="poster-meta">
+        <h3 class="display">Cozumel City Tour with Mayan Sky Show</h3>
+        <span class="badge cat">Sightseeing &amp; Culture</span>
+        <div class="dur">~3 hrs · 8–48 pax · Ages 4+</div>
+        <span class="synopsis">View guide →</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="match-band">
+    <div class="mt">Not sure which to recommend? Match the guest</div>
+    <div class="mrow">
+      <div class="mcard"><b>“We love food, culture &amp; doing things with our hands”</b>Honey Traditions · The Native Kitchen</div>
+      <div class="mcard"><b>“We want a real market &amp; cooking class”</b>The Native Kitchen</div>
+      <div class="mcard"><b>“Something relaxed &amp; easy — good for all ages, rain or shine”</b>Cozumel City Tour + Mayan Sky Show</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="brand">VISIT COZUMEL MEXICO</div>
+    Shore excursion guide for cruise partners · updated Jul 2026<br>
+    A quick reference for selling our tours — not a booking page.
+  </footer>
+</div>
+<script src="photos.js"></script>
+<script>
+  // Set each poster to its tour's first hero photo (from the manifest); placeholder if none.
+  document.querySelectorAll('.poster').forEach(function (a) {
+    var tour = a.getAttribute('href').replace('.html', '');
+    var hero = ((window.PHOTOS[tour] || {}).hero) || [];
+    var box = a.querySelector('.poster-img');
+    var img = box.querySelector('img');
+    if (hero.length) {
+      if (!img) { img = document.createElement('img'); box.insertBefore(img, box.firstChild); }
+      img.src = 'images/' + tour + '/hero/' + hero[0];
+    } else if (img) { img.remove(); }
+  });
+</script>
+</body>
+</html>
