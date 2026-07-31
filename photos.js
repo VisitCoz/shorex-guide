@@ -14,8 +14,8 @@ window.PHOTOS = {
     "cross-the-island": [],
     "hero": [],
     "jungle-to-table-lunch": [],
-    "scenic-start": [],
-    "shop-the-market": [],
+    "scenic-start": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"],
+    "shop-the-market": ["1.jpg","2.jpg"],
     "street-tortilleria": ["1.jpg","2.jpg","3.jpg","4.jpg"],
   },
   "city-tour-sky-show": {
