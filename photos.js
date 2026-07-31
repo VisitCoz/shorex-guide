@@ -16,7 +16,7 @@ window.PHOTOS = {
     "jungle-to-table-lunch": [],
     "scenic-start": [],
     "shop-the-market": [],
-    "street-tortilleria": [],
+    "street-tortilleria": ["1.jpg","2.jpg","3.jpg","4.jpg"],
   },
   "city-tour-sky-show": {
     "corpus-christi-church": ["1.jpg","2.jpg","3.jpg"],
