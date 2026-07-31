@@ -12,8 +12,8 @@ window.PHOTOS = {
   "native-kitchen": {
     "cook-it-yourself": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"],
     "cross-the-island": ["1.jpg","2.jpg"],
-    "hero": [],
-    "jungle-to-table-lunch": [],
+    "hero": ["1.jpg"],
+    "jungle-to-table-lunch": ["1.jpg","2.jpg"],
     "scenic-start": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"],
     "shop-the-market": ["1.jpg","2.jpg"],
     "street-tortilleria": ["1.jpg","2.jpg","3.jpg","4.jpg"],
